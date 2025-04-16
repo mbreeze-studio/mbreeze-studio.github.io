@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MBreeze Studios | Photo & Videography</title>
+  
+  <!-- Google Font: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-o8CytF6s8L4lvsY4d4YES5Jm+CWPPuyIvIeaSlUyg1cKYo0BwOMA+Z6onp6P/p6uXAcWYVDKQM5d/d20jT+1EA==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav>
+		<div class="logo">
+		  <img src="MBREEZE-LOGO_Long_Red_M.png" alt="MBreeze Studios Logo" />
+		</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#videography">Videography</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <h2>Master the Moment, Breeze the Scene</h2>
+        <p>Photo & Videography Studio</p>
+        <a href="#portfolio" class="btn">Explore Our Work</a>
+      </div>
+    </section>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        At MBreeze Studios, we believe every moment is a work of art. Combining passion with creativity, our team is dedicated to capturing the essence of life's most precious moments. With years of experience in photography and videography, we craft visual stories that celebrate love, joy, and the beauty of life.
+      </p>
+      <!-- Enhanced Social Links Section -->
+      <div class="social-links">
+	    <a href="https://www.instagram.com/mbreeze.studio" target="_blank" class="social-btn instagram">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.youtube.com/@mbreeze.studio" target="_blank" class="social-btn youtube">
+		  <i class="fa-brands fa-youtube"></i> YouTube
+        </a>
+        <a href="https://space.bilibili.com/2503689/lists" target="_blank" class="social-btn bilibili">
+          <i class="fa-brands fa-bilibili"></i> Bilibili
+        </a>
+      </div>
+    </div>
+  </section>
+
+	<!-- Portfolio Section -->
+	<section id="portfolio" class="portfolio">
+	  <div class="container">
+		<h2>Portfolio</h2>
+		<div class="gallery">
+		  <!-- Each gallery item -->
+		  <div class="gallery-item">
+			<img src="https://live.staticflickr.com/65535/53695997782_07173f5be7_k.jpg" alt="Gallery Image 1">
+		  </div>
+		  <div class="gallery-item">
+			<img src="https://live.staticflickr.com/65535/53697328525_ec88cffb2d_k.jpg" alt="Gallery Image 2">
+		  </div>
+		  <div class="gallery-item">
+			<img src="https://live.staticflickr.com/65535/53695997407_65a4c441de_k.jpg" alt="Gallery Image 3">
+		  </div>
+		  <div class="gallery-item">
+			<img src="https://live.staticflickr.com/65535/53697222784_98a88f84a0_k.jpg" alt="Gallery Image 4">
+		  </div>
+		  <div class="gallery-item">
+			<img src="https://live.staticflickr.com/65535/53697401498_6a75b90de4_k.jpg" alt="Gallery Image 5">
+		  </div>
+		  <div class="gallery-item">
+			  <div class="aspect-ratio-3-4">
+				<img src="https://live.staticflickr.com/65535/53697222714_5cb873c3cf_k.jpg" alt="Gallery Image 6">
+				</div>
+		  </div>
+		</div>
+	  </div>
+	</section>
+
+	<!-- Modal for the Lightbox Effect -->
+	<div id="modal" class="modal">
+	  <span class="modal-close">&times;</span>
+	  <img class="modal-content" id="modal-img">
+	</div>
+	
+
+	<!-- Videography Section -->
+	<section id="videography" class="videography">
+		<div class="container">
+			<h2>Videography</h2>
+			<p>
+				Experience our storytelling in motion. Enjoy highlights from our recent projects,
+				captured with precision and artistry.
+			</p>
+
+			<!-- Video Item: YouTube -->
+			<div class="video-item">
+				<h3>Iraq Wedding in US</h3>
+				<p>Single videographer with an assistant. A true to life wedding video.</p>
+				<div class="video-wrapper">
+					<iframe 
+						src="https://www.youtube.com/embed/g_QnBvM93aU?si=sbTqVJmnccfG4uHE"
+						title="Videography Showcase"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen>
+					</iframe>
+				</div>
+			</div>
+
+			<!-- Video Item: Bilibili -->
+			<div class="video-item">
+				<h3>Slow Slow Tune 《声声慢》</h3>
+				<p>A multi-camera live show recording. Featuring beautiful Hanfu and Chinese tradition tunes</p>
+				<div class="video-wrapper">
+					<iframe 
+						src="https://player.bilibili.com/player.html?isOutside=true&aid=1700206806&bvid=BV1zK42117HJ&cid=1431873233&p=1"
+						scrolling="no"
+						border="0"
+						frameborder="no"
+						framespacing="0"
+						allowfullscreen="true">
+					</iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Ready to capture your story? Reach out to us for a consultation or quote.</p>
+      <!-- Using FormSubmit to directly send inquiries to mbreeze@gmail.com -->
+      <form action="https://formsubmit.co/mbreeze.studio@gmail.com" method="POST">
+        <!-- Optional: add a hidden field to disable the captcha if not needed -->
+        <input type="hidden" name="_captcha" value="false">
+        
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name here" required />
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="_replyto" placeholder="Your email here" required />
+        </div>
+        
+        <div class="form-group">
+          <label for="project">Project Details</label>
+          <textarea id="project" name="project" rows="5" placeholder="Tell us more about your event/vision" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 MBreeze Studios. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+	<script>
+		// Get modal elements
+		const modal = document.getElementById("modal");
+		const modalImg = document.getElementById("modal-img");
+		const modalClose = document.querySelector(".modal-close");
+		
+		// Get all gallery images
+		const galleryImages = document.querySelectorAll(".gallery-item img");
+		
+		// When an image is clicked:
+		galleryImages.forEach(img => {
+			img.addEventListener("click", function() {
+				modal.style.display = "block";
+				modalImg.src = this.src;
+			});
+		});
+		
+		// When the close button is clicked, hide the modal
+		modalClose.addEventListener("click", function() {
+			modal.style.display = "none";
+		});
+		
+		// Also, clicking outside the (enlarged) image closes the modal
+		modal.addEventListener("click", function(e) {
+			if (e.target === modal) {
+				modal.style.display = "none";
+			}
+		});
+	</script>
+</body>
+</html>
