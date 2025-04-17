@@ -91,8 +91,8 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.2); /* Adjust opacity as needed for a light glass effect */
-  backdrop-filter: blur(1px);           /* Create the frosted glass blur */
+  background: rgba(255, 255, 255, 0.1); /* Adjust opacity as needed for a light glass effect */
+  backdrop-filter: blur(2px);           /* Create the frosted glass blur */
   z-index: 1;
   pointer-events: none;                 /* Makes sure the overlay doesn’t block clicks */
 }
@@ -135,7 +135,7 @@ nav {
 
 .btn {
   display: inline-block;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
   color: #333;
   padding: 12px 30px;
   text-decoration: none;
@@ -207,6 +207,7 @@ section p {
   color: #fff;
 }
 
+
 /* Gallery: 3 images per row using CSS Grid */
 .gallery {
   display: grid;
@@ -241,6 +242,31 @@ section p {
   object-fit: cover;        /* Ensures the image covers the container (cropping as needed) */
   object-position: bottom;  /* Focuses on the lower portion of the image */
   display: block;
+}
+
+/* Container for buttons */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers buttons horizontally */
+  gap: 20px; /* Adds spacing between buttons */
+  margin-top: 30px; /* Adds spacing above the button row */
+}
+
+/* Style for individual buttons */
+.btn_album {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(235, 85, 30, 0.8);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.btn_album:hover {
+  background-color: rgba(235, 85, 30, 1);
 }
 
 /* Modal (Lightbox) Styles */
@@ -379,4 +405,50 @@ footer {
   .nav-links li {
     margin: 15px 0;
   }
+}
+
+
+/*Below part is for press.html*/
+/* Header */
+
+/* Press Section */
+.press {
+	margin-top: 80px; /* To account for fixed nav */
+}
+
+.press h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.press-item {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.press-item h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.press-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.press-item a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.press-item a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
 }

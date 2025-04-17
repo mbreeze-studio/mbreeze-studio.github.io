@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MBreeze Studios | Photo & Videography</title>
+  <title>MBreeze Studio | Photo & Videography</title>
   
   <!-- Google Font: Montserrat -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
@@ -21,13 +21,16 @@
   <header>
     <nav>
 		<div class="logo">
-		  <img src="MBREEZE-LOGO_Long_Red_M.png" alt="MBreeze Studios Logo" />
+			<a href="index.html">
+        <img src="MBREEZE-LOGO_Long_Red_M.png" alt="MBreeze Studio Logo" />
+			</a>
 		</div>
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#videography">Videography</a></li>
+				<li><a href="press.html">Press</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -66,32 +69,37 @@
 
 	<!-- Portfolio Section -->
 	<section id="portfolio" class="portfolio">
-	  <div class="container">
-		<h2>Portfolio</h2>
-		<div class="gallery">
-		  <!-- Each gallery item -->
-		  <div class="gallery-item">
-			<img src="https://live.staticflickr.com/65535/53695997782_07173f5be7_k.jpg" alt="Gallery Image 1">
-		  </div>
-		  <div class="gallery-item">
-			<img src="https://live.staticflickr.com/65535/53697328525_ec88cffb2d_k.jpg" alt="Gallery Image 2">
-		  </div>
-		  <div class="gallery-item">
-			<img src="https://live.staticflickr.com/65535/53695997407_65a4c441de_k.jpg" alt="Gallery Image 3">
-		  </div>
-		  <div class="gallery-item">
-			<img src="https://live.staticflickr.com/65535/53697222784_98a88f84a0_k.jpg" alt="Gallery Image 4">
-		  </div>
-		  <div class="gallery-item">
-			<img src="https://live.staticflickr.com/65535/53697401498_6a75b90de4_k.jpg" alt="Gallery Image 5">
-		  </div>
-		  <div class="gallery-item">
-			  <div class="aspect-ratio-3-4">
-				<img src="https://live.staticflickr.com/65535/53697222714_5cb873c3cf_k.jpg" alt="Gallery Image 6">
+		<div class="container">
+			<h2>Portfolio</h2>
+			<div class="gallery">
+				<!-- Each gallery item -->
+				<div class="gallery-item">
+					<img src="https://live.staticflickr.com/65535/53695997782_07173f5be7_k.jpg" alt="Gallery Image 1">
 				</div>
-		  </div>
+				<div class="gallery-item">
+					<img src="https://live.staticflickr.com/65535/53697328525_ec88cffb2d_k.jpg" alt="Gallery Image 2">
+				</div>
+				<div class="gallery-item">
+					<img src="https://live.staticflickr.com/65535/53695997407_65a4c441de_k.jpg" alt="Gallery Image 3">
+				</div>
+				<div class="gallery-item">
+					<img src="https://live.staticflickr.com/65535/53697222784_98a88f84a0_k.jpg" alt="Gallery Image 4">
+				</div>
+				<div class="gallery-item">
+					<img src="https://live.staticflickr.com/65535/53697401498_6a75b90de4_k.jpg" alt="Gallery Image 5">
+				</div>
+				<div class="gallery-item">
+					<div class="aspect-ratio-3-4">
+						<img src="https://live.staticflickr.com/65535/53697222714_5cb873c3cf_k.jpg" alt="Gallery Image 6">
+					</div>
+				</div>
+			</div>
+			<!-- Buttons at the bottom of the portfolio -->
+			<div class="button-container">
+				<a href="https://flic.kr/s/aHBqjBoRtd" target="_blank" class="btn_album event-photo">Event Photos</a>
+				<!-- <a href="https://flic.kr/s/aHBqjWeddingPhotos" target="_blank" class="btn wedding-photo">Wedding Photos</a> -->
+			</div>
 		</div>
-	  </div>
 	</section>
 
 	<!-- Modal for the Lightbox Effect -->
@@ -117,6 +125,22 @@
 				<div class="video-wrapper">
 					<iframe 
 						src="https://www.youtube.com/embed/g_QnBvM93aU?si=sbTqVJmnccfG4uHE"
+						title="Videography Showcase"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen>
+					</iframe>
+				</div>
+			</div>
+
+			<!-- Video Item: YouTube -->
+			<div class="video-item">
+				<h3>I Want Summer</h3>
+				<p>Scripted, directed and filmed. A promotional music video for a singing contest.</p>
+				<div class="video-wrapper">
+					<iframe 
+						src="https://www.youtube.com/embed/V1xfUxg83lY?si=aDcw98ISupEsngey"
 						title="Videography Showcase"
 						frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -159,10 +183,17 @@
           <input type="text" id="name" name="name" placeholder="Your name here" required />
         </div>
         
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="_replyto" placeholder="Your email here" required />
-        </div>
+				<div class="form-group">
+					<label for="email">Email Address</label>
+					<input type="email" id="email" name="_replyto" placeholder="Your email here" required />
+				</div>
+				<input type="hidden" name="email" id="email-copy">
+				<script>
+					// Copy the value from the _replyto field into the hidden 'email' field on submission
+					document.querySelector('form').addEventListener('submit', function() {
+						document.getElementById('email-copy').value = document.getElementById('email').value;
+					});
+				</script>
         
         <div class="form-group">
           <label for="project">Project Details</label>
@@ -177,7 +208,7 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 MBreeze Studios. All Rights Reserved.</p>
+      <p>&copy; 2025 MBreeze Studio. All Rights Reserved.</p>
     </div>
   </footer>
   
