@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MBreeze Studio | Photo & Videography</title>
+  <title>MBreeze Studio | Photo & Video</title>
   
   <!-- Google Font: Montserrat -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
@@ -168,42 +168,48 @@
 		</div>
 	</section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Ready to capture your story? Reach out to us for a consultation or quote.</p>
-      <!-- Using FormSubmit to directly send inquiries to mbreeze@gmail.com -->
-      <form action="https://formsubmit.co/mbreeze.studio@gmail.com" method="POST">
-        <!-- Optional: add a hidden field to disable the captcha if not needed -->
-        <input type="hidden" name="_captcha" value="false">
-        
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name here" required />
-        </div>
-        
-				<div class="form-group">
-					<label for="email">Email Address</label>
-					<input type="email" id="email" name="_replyto" placeholder="Your email here" required />
-				</div>
-				<input type="hidden" name="email" id="email-copy">
-				<script>
-					// Copy the value from the _replyto field into the hidden 'email' field on submission
-					document.querySelector('form').addEventListener('submit', function() {
-						document.getElementById('email-copy').value = document.getElementById('email').value;
-					});
-				</script>
-        
-        <div class="form-group">
-          <label for="project">Project Details</label>
-          <textarea id="project" name="project" rows="5" placeholder="Tell us more about your event/vision" required></textarea>
-        </div>
-        
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Ready to capture your story? Reach out to us for a consultation or quote.</p>
+    <!-- Using FormSubmit to directly send inquiries to mbreeze@gmail.com -->
+    <form action="https://formsubmit.co/mbreeze.studio@gmail.com" method="POST">
+      <!-- Optional: add a hidden field to disable the captcha if not needed -->
+      <input type="hidden" name="_captcha" value="false">
+      
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name here" required />
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="_replyto" placeholder="Your email here" required />
+      </div>
+      <input type="hidden" name="email" id="email-copy">
+      <script>
+        // Copy the value from the _replyto field into the hidden 'email' field on submission
+        document.querySelector('form').addEventListener('submit', function() {
+          document.getElementById('email-copy').value = document.getElementById('email').value;
+        });
+      </script>
+      
+      <div class="form-group">
+        <label for="project">Project Details</label>
+        <textarea id="project" name="project" rows="5" placeholder="Tell us more about your event/vision" required></textarea>
+      </div>
+      
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- Additional contact information -->
+    <div class="contact-info">
+      <p>You can also reach out via email: <a href="mailto:mbreeze.studio@gmail.com">mbreeze.studio@gmail.com</a></p>
+      <p>Or connect with us on WeChat: <strong>mbreeze_studio</strong></p>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer>

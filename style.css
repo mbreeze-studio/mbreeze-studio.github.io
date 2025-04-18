@@ -418,6 +418,21 @@ section p {
   background: #555;
 }
 
+/* Center the contact-info box within its parent container and align text to the left */
+.contact-info {
+	width: 90%;
+  max-width: 600px;           /* Set a fixed or desired width for the box */
+  margin: 20px auto;      /* Centers the box horizontally; adjust the top/bottom margin as needed */
+}
+
+/* Adjust the spacing between each line */
+.contact-info p {
+  margin: 5px 0;          /* Reduce vertical margins for a tighter grouping */
+  font-size: 1rem;        /* Adjust font size if needed */
+  color: #333;            /* Or your desired font color */
+	text-align: left;       /* Ensure the content inside is aligned to the left */
+}
+
 /* Footer */
 footer {
   background: #333;
