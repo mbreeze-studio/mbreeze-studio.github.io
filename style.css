@@ -219,12 +219,15 @@ section p {
   color: #333;
   font-weight: 600;
   transition: all 0.3s ease;
+	vertical-align: middle;
 }
 
 .social-btn i {
   margin-right: 8px;
   font-size: 20px;
   color: #000;
+	vertical-align: middle;
+	align-items: center;
 }
 
 /* Styling for the custom RedNote icon */
@@ -233,6 +236,7 @@ section p {
   width: 20px;
   margin-right: 8px;
   vertical-align: middle;
+	filter: grayscale(100%) brightness(0%);
 }
 
 .social-btn:hover {
@@ -240,9 +244,13 @@ section p {
   color: #fff;
 }
 
+/*.grayscale-image {
+	filter: grayscale(100%) brightness(0%);
+}*/
+
 .social-btn:hover i,
 .social-btn:hover .social-icon {
-  color: #fff;
+  filter: grayscale(100%) brightness(0%) invert(100%);
 }
 
 
