@@ -178,6 +178,12 @@ nav {
     padding: 0 10px;
   }
 	
+	.studio-intro {
+  margin: 0 0 0px 0; /* 控制段落之间的间距 */
+  line-height: 1.6;   /* 控制行高，提升可读性 */
+  font-size: 1.1rem;  /* 可根据设计调整字体大小 */
+}
+	
 	.container {
   width: 90%;
   margin: 40px auto;
