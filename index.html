@@ -14,18 +14,23 @@
 
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
+  <script src="navigation.js" defer></script>
 </head>
 
 <body>
   <!-- Header & Navigation -->
   <header>
-    <nav>
+    <nav class="site-nav" aria-label="Main navigation">
 		<div class="logo">
 			<a href="index.html">
         <img src="MBREEZE-LOGO_Long_Red_M.png" alt="MBreeze Studio Logo" />
 			</a>
 		</div>
-      <ul class="nav-links">
+      <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" hidden>
+        <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <ul class="nav-links" id="primary-navigation">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
@@ -81,42 +86,42 @@ Our goal is to capture every detail with clarity and creativity, transforming yo
 			<div class="gallery">
 				<!-- Each gallery item -->
 				<div class="gallery-item">
-					<img src="https://live.staticflickr.com/65535/53695997782_07173f5be7_k.jpg" alt="Gallery Image 1">
+					<img src="https://live.staticflickr.com/65535/53695997782_07173f5be7_k.jpg" alt="Gallery Image 1" width="2048" height="1365" loading="lazy" decoding="async">
 				</div>
 				<div class="gallery-item">
-					<img src="https://live.staticflickr.com/65535/53697328525_ec88cffb2d_k.jpg" alt="Gallery Image 2">
+					<img src="https://live.staticflickr.com/65535/53697328525_ec88cffb2d_k.jpg" alt="Gallery Image 2" width="2048" height="1365" loading="lazy" decoding="async">
 				</div>
 				<div class="gallery-item">
-					<img src="https://live.staticflickr.com/65535/53695997407_65a4c441de_k.jpg" alt="Gallery Image 3">
+					<img src="https://live.staticflickr.com/65535/53695997407_65a4c441de_k.jpg" alt="Gallery Image 3" width="2048" height="1365" loading="lazy" decoding="async">
 				</div>
 				<div class="gallery-item">
-					<img src="https://live.staticflickr.com/65535/53697222784_98a88f84a0_k.jpg" alt="Gallery Image 4">
+					<img src="https://live.staticflickr.com/65535/53697222784_98a88f84a0_k.jpg" alt="Gallery Image 4" width="1536" height="2048" loading="lazy" decoding="async">
 				</div>
 				<div class="gallery-item">
-					<img src="https://live.staticflickr.com/65535/53697401498_6a75b90de4_k.jpg" alt="Gallery Image 5">
+					<img src="https://live.staticflickr.com/65535/53697401498_6a75b90de4_k.jpg" alt="Gallery Image 5" width="2048" height="1365" loading="lazy" decoding="async">
 				</div>
 				<div class="gallery-item">
 					<div class="aspect-ratio-3-4">
-						<img src="https://live.staticflickr.com/65535/53697222714_5cb873c3cf_k.jpg" alt="Gallery Image 6">
+						<img src="https://live.staticflickr.com/65535/53697222714_5cb873c3cf_k.jpg" alt="Gallery Image 6" width="1365" height="2048" loading="lazy" decoding="async">
 					</div>
 				</div>
 				<div class="gallery-item">
-					<img src="https://live.staticflickr.com/65535/54483410187_9d6eeaa523_k.jpg" alt="Gallery Image 7">
+					<img src="https://live.staticflickr.com/65535/54483410187_9d6eeaa523_k.jpg" alt="Gallery Image 7" width="2048" height="1365" loading="lazy" decoding="async">
 				</div>
 				<div class="gallery-item">
-					<img src="https://live.staticflickr.com/65535/54484450884_9a3c681a34_k.jpg" alt="Gallery Image 8">
+					<img src="https://live.staticflickr.com/65535/54484450884_9a3c681a34_k.jpg" alt="Gallery Image 8" width="2048" height="1365" loading="lazy" decoding="async">
 				</div>
 				<div class="gallery-item">
-					<img src="https://live.staticflickr.com/65535/54484256096_fe9c5b2ee0_k.jpg" alt="Gallery Image 9">
+					<img src="https://live.staticflickr.com/65535/54484256096_fe9c5b2ee0_k.jpg" alt="Gallery Image 9" width="2048" height="1365" loading="lazy" decoding="async">
 				</div>
 				<div class="gallery-item">
-					<img src="https://live.staticflickr.com/65535/54483410192_997ba153ad_k.jpg" alt="Gallery Image 10">
+					<img src="https://live.staticflickr.com/65535/54483410192_997ba153ad_k.jpg" alt="Gallery Image 10" width="1365" height="2048" loading="lazy" decoding="async">
 				</div>
 				<div class="gallery-item">
-					<img src="https://live.staticflickr.com/65535/54484450874_0311c8139d_k.jpg" alt="Gallery Image 11">
+					<img src="https://live.staticflickr.com/65535/54484450874_0311c8139d_k.jpg" alt="Gallery Image 11" width="1365" height="2048" loading="lazy" decoding="async">
 				</div>
 				<div class="gallery-item">
-					<img src="https://live.staticflickr.com/65535/54484613325_c45ef6f840_k.jpg" alt="Gallery Image 12">
+					<img src="https://live.staticflickr.com/65535/54484613325_c45ef6f840_k.jpg" alt="Gallery Image 12" width="1365" height="2048" loading="lazy" decoding="async">
 				</div>
 			</div>
 			<!-- Buttons at the bottom of the portfolio -->

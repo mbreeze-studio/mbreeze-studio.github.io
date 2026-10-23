@@ -13,23 +13,28 @@
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-o8CytF6s8L4lvsY4d4YES5Jm+CWPPuyIvIeaSlUyg1cKYo0BwOMA+Z6onp6P/p6uXAcWYVDKQM5d/d20jT+1EA==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
 
   <!-- External CSS -->
-  <link rel="stylesheet" href="style.css" />	
+  <link rel="stylesheet" href="style.css" />
+  <script src="navigation.js" defer></script>
 </head>
 <body>
   <!-- Header (same as used in index.html) -->
   <header>
-    <nav>
+    <nav class="site-nav" aria-label="Main navigation">
       <div class="logo">
 			<a href="index.html">
         <img src="MBREEZE-LOGO_Long_Red_M.png" alt="MBreeze Studio Logo" />
 			</a>
       </div>
-      <ul class="nav-links">
+      <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" hidden>
+        <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <ul class="nav-links" id="primary-navigation">
           <li><a href="index.html">Home</a></li>
 					<li><a href="index.html#about">About</a></li>
 					<li><a href="index.html#portfolio">Portfolio</a></li>
 					<li><a href="index.html#videography">Videography</a></li>
-          <li><a href="press.html" class="active">Press</a></li>
+          <li><a href="press.html" class="active" aria-current="page">Press</a></li>
 					<li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
